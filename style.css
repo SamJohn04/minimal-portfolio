@@ -4,15 +4,19 @@
     --secondary-color: #1A1D1A;
     --tertiary-color: #8AB0AB;
     --text-color: #F1F1F1;
+    --background-emphasis-color: #000;
+    --border-color: #1A1D1A50;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --background-color: #F1F1F1;
         --primary-color: #8AB0AB;
-        --secondary-color: #26413C;
-        --tertiary-color: #1A1D1A;
+        --secondary-color: #1A1D1A;
+        --tertiary-color: #26413C;
         --text-color: #03120E;
+        --background-emphasis-color: #FFF;
+        --border-color: #1A1D1A50;
     }
 }
 
@@ -31,7 +35,7 @@ header {
 
 a {
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: #2596BE;
 }
 
 #hero {
@@ -41,6 +45,12 @@ a {
 
     font-size: 4rem;
     padding-left: 0.5rem;
+}
+
+.project-item {
+    min-height: 50dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -74,8 +84,8 @@ p {
 }
 
 p code {
-    background-color: #000;
-    border: #1A1D1A solid;
+    background-color: var(--background-emphasis-color);
+    border: var(--border-color) solid;
     padding: 0.2rem;
     font-size: 0.75rem;
 }
