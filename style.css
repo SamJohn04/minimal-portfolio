@@ -98,6 +98,8 @@ p code {
 
     main {
         padding: 1.5rem;
+
+        font-size: 1.25rem;
     }
 
     h1 {
@@ -110,10 +112,6 @@ p code {
 
     h3 {
         font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1.25rem;
     }
 
     p code {
