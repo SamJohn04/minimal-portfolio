@@ -53,6 +53,12 @@ a {
     flex-direction: column;
 }
 
+.work-item {
+    min-height: 40dvh;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     padding: 0.25rem;
 }
