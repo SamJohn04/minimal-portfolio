@@ -1,22 +1,18 @@
 :root {
-    --background-color: #03120E;
-    --primary-color: #26413C;
-    --secondary-color: #1A1D1A;
-    --tertiary-color: #8AB0AB;
-    --text-color: #F1F1F1;
+    --background-color: #1A1B1A;
+    --text-color: #F0F7EE;
+    --primary-color: #058ED9;
+
     --background-emphasis-color: #000;
-    --border-color: #1A1D1A50;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --background-color: #F1F1F1;
-        --primary-color: #8AB0AB;
-        --secondary-color: #1A1D1A;
-        --tertiary-color: #26413C;
-        --text-color: #03120E;
+        --background-color: #F0F7EE;
+        --text-color: #1A1B1A;
+        --primary-color: #058ED9;
+
         --background-emphasis-color: #FFF;
-        --border-color: #1A1D1A50;
     }
 }
 
@@ -36,6 +32,10 @@ header {
 a {
     text-decoration: none;
     color: #2596BE;
+}
+
+a:hover {
+    color: var(--primary-color);
 }
 
 #hero {
@@ -89,13 +89,6 @@ p {
     line-height: 1.5rem;
 }
 
-p code {
-    background-color: var(--background-emphasis-color);
-    border: var(--border-color) solid;
-    padding: 0.2rem;
-    font-size: 0.75rem;
-}
-
 @media screen and (min-width: 960px) {
     #hero {
         font-size: 8rem;
@@ -118,9 +111,5 @@ p code {
 
     h3 {
         font-size: 1.5rem;
-    }
-
-    p code {
-        font-size: 0.95rem;
     }
 }
