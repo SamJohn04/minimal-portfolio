@@ -52,6 +52,11 @@ a:hover {
     padding-left: 0.5rem;
 }
 
+b {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
 .project-item {
     min-height: 50dvh;
     display: flex;
