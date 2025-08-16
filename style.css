@@ -2,6 +2,7 @@
     --background-color: #1A1B1A;
     --text-color: #F0F7EE;
     --primary-color: #058ED9;
+    --primary-focus-color: #7BC3E4;
 
     --background-emphasis-color: #000;
 }
@@ -11,6 +12,7 @@
         --background-color: #F0F7EE;
         --text-color: #1A1B1A;
         --primary-color: #058ED9;
+        --primary-focus-color: #27187E;
 
         --background-emphasis-color: #FFF;
     }
@@ -36,11 +38,11 @@ header {
 
 a {
     text-decoration: none;
-    color: #2596BE;
+    color: var(--primary-color);
 }
 
 a:hover {
-    color: var(--primary-color);
+    color: var(--primary-focus-color);
 }
 
 #hero {
