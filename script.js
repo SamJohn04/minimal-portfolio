@@ -1,15 +1,15 @@
-const alphabetsAndSpace = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-const alphabetSpaceLength = alphabetsAndSpace.length;
+const alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+const alphabetsLength = alphabets.length;
 
 document.getElementById("main-heading")?.addEventListener("mouseover", (event) => {
     let iterations = 0;
     const interval = setInterval(() => {
-        event.target.innerText = event.target.innerText.split("").map((c, i) => {
+        event.target.innerText = event.target.innerText.split("").map((_, i) => {
             if (i < iterations) {
                 return event.target.dataset.value[i];
             } else {
-                return alphabetsAndSpace[Math.floor(
-                    Math.random() * alphabetSpaceLength
+                return alphabets[Math.floor(
+                    Math.random() * alphabetsLength
                 )];
             }
         }).join("");

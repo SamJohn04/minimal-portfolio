@@ -1,11 +1,11 @@
 :root {
-    --background-color: #2e3440;
+    --background-color: #333333;
     
     --text-color: #F0F7EE;
-    --text-sleep-color: #F0F7EEBB;
+    --text-sleep-color: #F0F7EE88;
 
-    --primary-color: #058ED9;
-    --primary-focus-color: #7BC3E4;
+    --primary-color: #069EF2;
+    --primary-focus-color: #069EF2;
 
     --background-emphasis-color: #000;
 }
@@ -15,10 +15,10 @@
         --background-color: #F0F7EE;
     
         --text-color: #1A1B1A;
-        --text-sleep-color: #1A1B1A88;
+        --text-sleep-color: #1A1B1A77;
     
-        --primary-color: #058ED9;
-        --primary-focus-color: #27187E;
+        --primary-color: #069EF2;
+        --primary-focus-color: #069EF2;
 
         --background-emphasis-color: #FFF;
     }
@@ -49,6 +49,7 @@ a {
 
 a:hover {
     color: var(--primary-focus-color);
+    text-decoration: underline;
 }
 
 #hero {
@@ -64,7 +65,6 @@ a:hover {
 }
 
 b {
-    color: var(--primary-color);
     font-weight: 500;
 }
 
