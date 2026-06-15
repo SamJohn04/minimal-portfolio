@@ -58,8 +58,14 @@ a:hover {
     align-items: center;
 }
 
+#main-photo {
+  border-radius: 100%;
+  max-height:  30dvh;
+  max-width: 30dvw;
+}
+
 #main-heading {
-    font-size: 6rem;
+    font-size: 4rem;
     padding-left: 0.5rem;
     font-family: "Source Code Pro", monospace;
 }
@@ -113,7 +119,7 @@ p {
 }
 
 @media screen and (min-width: 960px) {
-    #hero {
+    #main-heading {
         font-size: 8rem;
         padding-left: 2rem;
     }
